@@ -9,3 +9,7 @@
 .btn-primary{
     @apply bg-violet-500 text-white px-1 py-2 rounded-lg font-semibold text-sm md:text-xl
 }
+
+.banner-container{
+    @apply flex flex-col md:flex-row my-4 justify-center items-center md:gap-52 gap-10 p-2 bg-sky-50
+}
