@@ -14,6 +14,7 @@ import Appliedjob from './Components/AppliedJob/Appliedjob';
 import Blogs from './Components/Blogs/Blogs';
 import Error from './Components/Error/Error';
 import { loadData } from './Loaders';
+import SingleJob from './Components/Home/SingleJob';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path:"/:singlejobID",
+        element: <SingleJob></SingleJob>,
+        loader: ({params})=> fetch(`https://emon3455.github.io/demo-picture/jobs/${params.singlejobID}.json?fbclid=IwAR2swsZH_1Sj2LX7XJWpOVoBiJFTOPrGzbkz0DwpTyepTgnKakppm8A8pKM`)
       },
       {
         path: "/statistics",

@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import SingleJob from './SingleJob';
 
 const JobFeacherInfo = ({job}) => {
 
-    const {job_id,company_logo,company_name,job_title,company_location,salary_range,job_time,job_type} = job
+    const {job_id,company_logo,company_name,job_title,company_location,salary_range,job_time,job_type} = job;
 
     return (
         <div className='bg-gray-50 border p-10 rounded-lg'>
@@ -20,7 +22,8 @@ const JobFeacherInfo = ({job}) => {
                     <span > <i className="fa-solid fa-regular fa-location-dot"></i> {company_location} </span>
                     <span> $ Salary : {salary_range} </span>
                 </div>
-                <button className='btn-primary mt-2'>View Details</button>
+
+                <span className='btn-primary mt-2 inline-block'><Link to={`/${job_id}`}>View Details</Link></span>
             </div>
         </div>
     );
