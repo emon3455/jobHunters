@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import { Outlet } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Layout = () => {
     return (
@@ -9,6 +10,8 @@ const Layout = () => {
             <Header></Header>
 
             <Outlet></Outlet>
+
+            <ActiveLink></ActiveLink>
             
         </div>
     );

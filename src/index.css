@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-container{
+    @apply md:flex md:justify-between md:items-center bg-sky-50 p-2 text-xl text-center md:text-left font-semibold space-y-4 md:space-y-0
+}
+
+.btn-primary{
+    @apply bg-violet-500 text-white px-1 py-2 rounded-lg font-semibold text-sm md:text-xl
+}
