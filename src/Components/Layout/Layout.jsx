@@ -1,20 +1,27 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext } from 'react';
 import Header from '../Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import ActiveLink from '../ActiveLink/ActiveLink';
 
-
+export const CatagorysContext = createContext([]);
+export const JobContext = createContext([]);
 
 const Layout = () => {
+
+    const {catagoryData, jobData} = useLoaderData();
 
     return (
         <div className='container mx-auto'>
 
-            <Header></Header>
+            <JobContext.Provider value={jobData}>
+                <CatagorysContext.Provider value={catagoryData}>
+                    <Header></Header>
 
-            <Outlet></Outlet>
+                    <Outlet></Outlet>
 
-            <ActiveLink></ActiveLink>
+                    <ActiveLink></ActiveLink>
+                </CatagorysContext.Provider>
+            </JobContext.Provider>  
             
         </div>
     );

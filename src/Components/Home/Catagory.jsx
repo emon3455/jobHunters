@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { CatagorysContext } from '../Layout/Layout';
 
-const Catagory = ({catagorys}) => {
-    console.log(catagorys);
+const Catagory = () => {
+
+    const catagorys = useContext(CatagorysContext)
 
     return (
         <section className='my-10'>

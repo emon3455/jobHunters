@@ -13,18 +13,18 @@ import Statistics from './Components/Statistics/Statistics';
 import Appliedjob from './Components/AppliedJob/Appliedjob';
 import Blogs from './Components/Blogs/Blogs';
 import Error from './Components/Error/Error';
-import { loadCatagory } from './Loaders';
+import { loadData } from './Loaders';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
     errorElement: <Error></Error>,
+    loader: loadData,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch("catagorys.json")
       },
       {
         path: "/statistics",
