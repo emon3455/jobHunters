@@ -9,16 +9,19 @@ const JobFeacherInfo = ({job}) => {
             <div className="">
                 <img src={company_logo} alt="" />
             </div>
-            <h3 className='text-2xl mt-5 font-bold'>{job_title}</h3>
-            <p>{company_name}</p>
-            <div className="">
-                <span>{job_type}</span> <span>{job_time}</span>
+            <div className="mt-5 space-y-4">
+                <h3 className='text-2xl font-bold text-gray-700'>{job_title}</h3>
+                <p className='text-gray-500'>{company_name}</p>
+                <div className=" space-x-4">
+                    <span className='btn-secondary'>{job_type}</span>
+                    <span className='btn-secondary'>{job_time}</span>
+                </div>
+                <div className="space-x-4 text-gray-600">
+                    <span > <i className="fa-solid fa-regular fa-location-dot"></i> {company_location} </span>
+                    <span> $ Salary : {salary_range} </span>
+                </div>
+                <button className='btn-primary mt-2'>View Details</button>
             </div>
-            <div className="space-x-4">
-                <span> <i className="fa-solid fa-regular fa-location-dot"></i> {company_location} </span>
-                <span> $ Salary : {salary_range} </span>
-            </div>
-            <button className='btn-primary mt-2'>View Details</button>
         </div>
     );
 };
