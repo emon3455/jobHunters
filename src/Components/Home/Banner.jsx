@@ -3,8 +3,8 @@ import React from 'react';
 const Banner = () => {
     return (
         <section className="banner-container">
-            <div className="md:w-2/3 space-y-4">
-                <h2 className='text-7xl font-semibold'>
+            <div className="w-full  xl:w-2/3 space-y-4">
+                <h2 className='text-4xl lg:text-5xl xl:text-7xl font-semibold'>
                     Get One Step Closer To Your <span className='text-violet-600'>Dream Job</span>
                 </h2>
 

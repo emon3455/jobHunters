@@ -11,5 +11,5 @@
 }
 
 .banner-container{
-    @apply flex flex-col md:flex-row my-4 justify-center items-center md:gap-52 gap-10 p-2 bg-sky-50
+    @apply flex flex-col md:flex-row my-4 justify-center items-center gap-10 p-2 bg-sky-50
 }

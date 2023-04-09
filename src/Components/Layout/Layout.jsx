@@ -11,7 +11,7 @@ const Layout = () => {
     const {catagoryData, jobData} = useLoaderData();
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto p-2'>
 
             <JobContext.Provider value={jobData}>
                 <CatagorysContext.Provider value={catagoryData}>

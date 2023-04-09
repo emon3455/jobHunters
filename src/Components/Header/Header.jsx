@@ -8,7 +8,7 @@ const Header = () => {
 
             <h2 className='text-2xl font'>Job Hunters</h2>
 
-            <div className="md:w-2/4 lg:w-1/3 flex md:justify-between md:mx-auto justify-around text-sm md:text-xl">
+            <div className="md:w-2/4 lg:w-1/3 flex md:justify-between md:mx-auto justify-around text-sm md:text-lg lg:text-xl">
                 <ActiveLink to="/">Home</ActiveLink>
                 <ActiveLink to="/statistics">Statistics</ActiveLink>
                 <ActiveLink to="/appliedJob">Applied Job</ActiveLink>
