@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { createContext, useContext } from 'react';
 import Header from '../Header/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import ActiveLink from '../ActiveLink/ActiveLink';
 
+
+
 const Layout = () => {
+
     return (
         <div className='container mx-auto'>
 

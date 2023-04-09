@@ -1,0 +1,22 @@
+[  
+    {    "logo": "https://github.com/emon3455/demo-picture/blob/main/assets/Icons/chip%201.png?raw=true",
+         "category": "Software Development",
+         "total_jobs": 100  
+    },
+
+    {    "logo": "https://github.com/emon3455/demo-picture/blob/main/assets/Icons/business%201.png?raw=true",
+         "category": "Marketing",    
+         "total_jobs": 50  
+    },
+
+    {    "logo": "https://github.com/emon3455/demo-picture/blob/main/assets/Icons/Frame.png?raw=true",
+         "category": "Finance", 
+         "total_jobs": 75  
+    },
+
+    {    "logo": "https://github.com/emon3455/demo-picture/blob/main/assets/Icons/social-media%201.png?raw=true",    
+         "category": "Human Resources",    
+         "total_jobs": 25  
+    }
+
+]

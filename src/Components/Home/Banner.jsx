@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="banner-container">
+        <section className="banner-container">
             <div className="md:w-2/3 space-y-4">
                 <h2 className='text-7xl font-semibold'>
                     Get One Step Closer To Your <span className='text-violet-600'>Dream Job</span>
@@ -18,7 +18,7 @@ const Banner = () => {
             <div className="banner-img">
                 <img className='w-full' src="https://github.com/emon3455/demo-picture/blob/main/assets/All%20Images/P3OLGJ1%20copy%201.png?raw=true" alt="" />
             </div>     
-        </div>
+        </section>
     );
 };
 
