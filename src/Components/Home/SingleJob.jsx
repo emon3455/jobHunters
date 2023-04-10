@@ -1,8 +1,10 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const SingleJob = () => {
-    const job = useLoaderData()
+    const jobs = useLoaderData()
+    const {singlejobID} = useParams();
+    const job = jobs.find(jb=> jb.job_id === singlejobID);
     
     const {job_id,company_logo,company_name,job_title,company_location,salary_range,job_time,job_type,phone,email,address,experience,educational_requirements,job_responsibilities,job_description} = job;
 

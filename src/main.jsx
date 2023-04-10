@@ -30,7 +30,8 @@ const router = createBrowserRouter([
       {
         path:"/:singlejobID",
         element: <SingleJob></SingleJob>,
-        loader: ({params})=> fetch(`https://emon3455.github.io/demo-picture/jobs/${params.singlejobID}.json?fbclid=IwAR2swsZH_1Sj2LX7XJWpOVoBiJFTOPrGzbkz0DwpTyepTgnKakppm8A8pKM`)
+        loader: ({params})=> fetch("job.json")
+        // `https://emon3455.github.io/demo-picture/jobs/${params.singlejobID}.json?fbclid=IwAR2swsZH_1Sj2LX7XJWpOVoBiJFTOPrGzbkz0DwpTyepTgnKakppm8A8pKM`
       },
       {
         path: "/statistics",
