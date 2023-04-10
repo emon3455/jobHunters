@@ -14,7 +14,8 @@
       "experience": "5+ years of experience in marketing",
       "phone": "555-123-4567",
       "email": "jobs@widgetsinc.com",
-      "address": "456 Elm St, New York, NY 10001"
+      "address": "456 Elm St, New York, NY 10001",
+      "aplied": 0
     },
     {
       "job_id": "J002",
@@ -31,7 +32,8 @@
       "experience": "1+ years of experience in sales",
       "phone": "888-695-1234",
       "email": "jobs@gizmosco.com",
-      "address": "789 Oak St, Los Angeles, CA 90001"
+      "address": "789 Oak St, Los Angeles, CA 90001",
+      "aplied": 0
     },
     {
         "job_id": "J003",
@@ -48,7 +50,8 @@
         "experience": "2+ years of experience in data analysis",
         "phone": "312-655-1234",
         "email": "jobs@xyzcorp.com",
-        "address": "456 Oak St, Chicago, IL 60601"
+        "address": "456 Oak St, Chicago, IL 60601",
+        "aplied": 0
       },
       {
         "job_id": "J004",
@@ -65,7 +68,8 @@
         "experience": "1+ years of experience in sales",
         "phone": "888-235-8523",
         "email": "Bizzjobs@gizmosco.com",
-        "address": "789 Oak St, Los Angeles, CA 90001"
+        "address": "789 Oak St, Los Angeles, CA 90001",
+        "aplied": 0
       },
       {
         "job_id": "J005",
@@ -82,7 +86,8 @@
         "experience": "3+ years of experience in software development",
         "phone": "214-785-1234",
         "email": "ABCjobs@abcinc.com",
-        "address": "789 Main St, Dallas, TX 75201"
+        "address": "789 Main St, Dallas, TX 75201",
+        "aplied": 0
       },
       {
         "job_id": "J006",
@@ -99,7 +104,8 @@
         "experience": "5+ years of experience in project management",
         "phone": "305-235-1234",
         "email": "PQRjobs@pqrco.com",
-        "address": "123 Elm St, Miami, FL 33101"
+        "address": "123 Elm St, Miami, FL 33101",
+        "aplied": 0
       },
       {
         "job_id": "J007",
@@ -116,7 +122,8 @@
         "experience": "1+ years of experience in marketing",
         "phone": "415-888-1234",
         "email": "jobs@Career Hubenterprises.com",
-        "address": "987 Market St, San Francisco, CA 94103"
+        "address": "987 Market St, San Francisco, CA 94103",
+        "aplied": 0
       },
       {
         "job_id": "J008",
@@ -133,7 +140,8 @@
         "experience": "3+ years of experience in front-end development",
         "phone": "212-565-1234",
         "email": "HIJjobs@hijco.com",
-        "address": "555 Park Ave, New York, NY 10022"
+        "address": "555 Park Ave, New York, NY 10022",
+        "aplied": 0
       }
 ]
   

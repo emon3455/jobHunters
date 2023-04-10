@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToDb, getShoppingCart } from '../../utils/fakedb';
 
 const SingleJob = () => {
     const jobs = useLoaderData()
     const {singlejobID} = useParams();
     const job = jobs.find(jb=> jb.job_id === singlejobID);
     
-    const {job_id,company_logo,company_name,job_title,company_location,salary_range,job_time,job_type,phone,email,address,experience,educational_requirements,job_responsibilities,job_description} = job;
+    const {job_id,job_title,salary_range,phone,email,address,experience,educational_requirements,job_responsibilities,job_description} = job;
+
+    const handleApplyJob=(job_id)=>{
+        addToDb(job_id)
+    }
 
     return (
         <div>
@@ -58,7 +63,7 @@ const SingleJob = () => {
                         </div>
 
                     </div>
-                    <button className='btn-primary w-full'>Apply Now</button>
+                    <button onClick={()=> handleApplyJob(job_id)}  className='btn-primary w-full'>Apply Now</button>
                 </div>
 
 

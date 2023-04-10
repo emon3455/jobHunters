@@ -26,12 +26,14 @@ const FeachersJob = () => {
                  jobs.map(job=> <JobFeacherInfo key={job.job_id} job={job}></JobFeacherInfo>) 
                  : 
                  jobs.slice(1,5).map(job=> <JobFeacherInfo key={job.job_id} job={job}></JobFeacherInfo>)
-                 }
+                }
+                
             </div>
 
            <div className=" my-8">
-                <button onClick={handleViewAl} className={`btn-primary mx-auto ${isclicked ? "hidden" : "block"}`}>See ALL Jobs</button>
+                <button onClick={handleViewAl} className={`btn-primary mx-auto  ${isclicked ? "hidden" : "block"}`}>See ALL Jobs</button>
            </div>
+          
 
         </section>
     );
