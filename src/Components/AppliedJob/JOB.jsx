@@ -14,7 +14,7 @@ const JOB = ({job}) => {
 
             <div className="w-3/4 flex justify-between items-center">
 
-                <div className="">
+                <div className="space-y-2">
                     <h3 className='text-2xl font-bold text-gray-700'>{job_title}</h3>
                     <p className='text-gray-500'>{company_name}</p>
                     <div className="flex gap-4">
