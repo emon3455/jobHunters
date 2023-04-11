@@ -37,8 +37,8 @@ const Appliedjob = () => {
             <h2 className='text-4xl font-semibold my-10 text-center'>Applied Jobs</h2>
 
             <div className="text-right space-x-4 my-6">
-                <button className='btn-primary' onClick={handleOnsiteJob}>Show Onsite Job</button>
-                <button className='btn-primary' onClick={handleRemoteJob}>Show Remote Job</button>
+                <button className='btn-secondary' onClick={handleOnsiteJob}>Show Onsite Job</button>
+                <button className='btn-secondary' onClick={handleRemoteJob}>Show Remote Job</button>
             </div>
 
             <div className="space-y-5">

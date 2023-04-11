@@ -10,7 +10,7 @@ const SingleJob = () => {
     const {job_id,job_title,salary_range,phone,email,address,experience,educational_requirements,job_responsibilities,job_description} = job;
 
     const handleApplyJob=(job_id)=>{
-        addToDb(job_id)
+        addToDb(job_id);
     }
 
     return (
