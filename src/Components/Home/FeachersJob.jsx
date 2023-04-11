@@ -1,14 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { JobContext } from '../Layout/Layout';
 import JobFeacherInfo from './JobFeacherInfo';
 
 const FeachersJob = () => {
 
     const jobs = useContext(JobContext);
-    const [isclicked, setIsClicked] = useState(false);
+    const [allJobs , setAllJobs] = useState(jobs);
+    
+    useEffect(()=>{
+        const fourJob = jobs.slice(0,4)
+        setAllJobs(fourJob);
+    },[])
 
     const handleViewAl =()=>{
-        setIsClicked(true);
+        setAllJobs(jobs)
     }
 
     return (
@@ -21,19 +26,14 @@ const FeachersJob = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto">
                 {
-                isclicked 
-                 ?
-                 jobs.map(job=> <JobFeacherInfo key={job.job_id} job={job}></JobFeacherInfo>) 
-                 : 
-                 jobs.slice(1,5).map(job=> <JobFeacherInfo key={job.job_id} job={job}></JobFeacherInfo>)
+                    allJobs.map(jb => <JobFeacherInfo key={jb.job_id} job={jb}></JobFeacherInfo>) 
                 }
                 
             </div>
 
-           <div className=" my-8">
-                <button onClick={handleViewAl} className={`btn-primary mx-auto  ${isclicked ? "hidden" : "block"}`}>See ALL Jobs</button>
+           <div className="my-8 text-center">
+                <button onClick={handleViewAl} className={"btn-primary mx-auto"}>See ALL Jobs</button>
            </div>
-          
 
         </section>
     );
