@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToDb, getShoppingCart } from '../../utils/fakedb';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SingleJob = () => {
     const jobs = useLoaderData()
@@ -10,7 +12,16 @@ const SingleJob = () => {
     const {job_id,job_title,salary_range,phone,email,address,experience,educational_requirements,job_responsibilities,job_description} = job;
     
     const handleApplyJob=(id)=>{
-        addToDb(id);
+
+       const allApliedJob = getShoppingCart();
+       if(id in allApliedJob){
+           toast("You Already Aplied on This Job !!");
+       }
+       else{
+           addToDb(id);
+           toast("Aplication Successfully Done !!");
+       }
+       
     }
 
     return (

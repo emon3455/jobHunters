@@ -2,6 +2,9 @@ import React, { createContext, useState } from 'react';
 import Header from '../Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import ActiveLink from '../ActiveLink/ActiveLink';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export const CatagorysContext = createContext([]);
 export const JobContext = createContext([]);
@@ -20,6 +23,7 @@ const Layout = () => {
                     <Outlet></Outlet>
 
                     <ActiveLink></ActiveLink>
+                    <ToastContainer></ToastContainer>
                 </CatagorysContext.Provider>
             </JobContext.Provider>  
             

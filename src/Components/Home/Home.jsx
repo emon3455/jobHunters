@@ -4,7 +4,6 @@ import Catagory from './Catagory';
 import { useLoaderData } from 'react-router-dom';
 import { CatagorysContext } from '../Layout/Layout';
 import FeachersJob from './FeachersJob';
-
 const Home = () => {
 
     return (
@@ -12,6 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Catagory></Catagory>
             <FeachersJob></FeachersJob>
+            
         </main>
     );
 };
